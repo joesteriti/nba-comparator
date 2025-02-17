@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoopMetrics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fa-solid fa-basketball"></i></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/comparator.html" class="navbar__links">Comparator</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/performance_visualizer.html" class="navbar__links">Performance Visualizer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="main__container">
+
+        <div class="main__content">
+          <h1>Comparator</h1>
+          <br><br>
+          <p1>Season:</p1>
+          <br><br>
+          <p2>From: <input type="text" id="search-bar" placeholder="Ex: 2015-2016"> To: <input type="text" id="search-bar" placeholder="Ex: 2016-2017"> </p2>
+          <br><br>
+          
+          <div class="left__content">
+          <div class="main__content">
+          <p1>Player:</p1>
+          <p3><input type="text" id="search_bar1" placeholder="Ex: Lebron James"></p3>
+          </div>
+          </div>
+
+          <div class="right__content">
+
+          <div class="main__content">
+          <p1>Player:</p1>
+          <p3><input type="text" id="search_bar2" placeholder="Ex: Stephen Curry"></p3>
+          </div>
+          </div>
+          <button class="main__btn" id="compare_button">Compare!</button>
+          <div id="results">
+            <div id="loading" style="display:none;">Loading... 
+              <br><br>
+              <i class="fa-solid fa-basketball fa-spin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
